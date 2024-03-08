@@ -1,0 +1,45 @@
+#Here, I will test different type of methods and techniques that I'll learn during the making of this feid project.
+
+#METHOD: json!!!
+import json 
+#handles json data.
+#this imports json(javascript object notation) which is a lightweight data interchange format
+#also it is easy to use and interpret by the developer and computer.
+
+#METHOD: testing Hash!!!
+import hashlib
+hash_object = hashlib.sha256()
+# hash_object is hashed(orginal value is changed , mainly to encrypt a password-.) here already but to get it's value for us to see
+# we can do this.
+hash_value = hash_object.hexdigest()
+print("has_value of SHA-256 is:" , hash_value)
+# expected answer == e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+#in class HospitalManagementsystem:
+#METHOD: __init__ is used !!!
+#it is a constructor which sets the filename for storing data.
+#it also helps to load_user_data to load existing or to initialise new file that doesn't exist.
+
+#METHOD: load_user_data !!!
+#tries to open user data file and load it using json
+#if no file is found it creates a empty dictionary for admin/patient or doctor.
+
+#METHOD: save_user_data!!!
+#Saves the user data to the user data file using json.
+
+# METHOD: create_id !!!
+#uses json to hash the password and creates a UID(User ID).
+#also stores the user data inside "users" dictionary.
+#calls the save_user_data to update or save the data.
+
+#METHOD: login !!!
+#handles user login functionality.
+#checks if user exist or not 
+#if user doesn't exist then it helps them sign up and create an id 
+#furthurmore it helps to store the new data and update it with the previous one.
+
+#METHOD: sample usage !!!
+#it helps to check with the working of programme.
+
+new input yet to be added ...
+
