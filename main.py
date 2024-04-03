@@ -30,7 +30,7 @@ class HospitalManagementSystem:
                 hashed_password = hashlib.sha256(password.encode()).hexdigest()
                 if stored_password == hashed_password:
                     return user_data
-                else:
+                else:   
                     print("Incorrect password.")
                     return None
             else:
